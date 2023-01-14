@@ -5,7 +5,8 @@ body{
     margin: 50px;
 }
 
-.header{
+/* Header section */
+.header-nav{
     display: flex;
     justify-content: space-between;
     
@@ -22,4 +23,221 @@ nav{
 nav a{
     text-decoration: none;
     margin-left: 20px;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: 'Poppins';
+}
+.nav-bar{
+    display: none;
+}
+
+
+
+/* header-content */
+.header-content{
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-between;
+
+}
+.header-content-titles{
+    height: 300px;
+    width: 580px;
+}
+.header-content-title{
+    font-family: Poppins;
+font-size: 52px;
+font-weight: 700;
+line-height: 70px;
+letter-spacing: 0px;
+text-align: left;
+
+}
+.header-description{
+    font-family: Poppins;
+font-size: 16px;
+font-weight: 600;
+line-height: 24px;
+letter-spacing: 0px;
+text-align: left;
+
+}
+.btn-primary{
+    display: flex;
+    gap: 8px;
+    height: 44px;
+    width: 190px;
+    padding: 10px 24px;
+    justify-content: center;
+    text-align: center;
+    background: #E02C6D;
+    border-radius: 41px;
+    border: none;
+    color: white;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+}
+.header-content img{
+    width: 400px;
+}
+
+/* header section responsive */
+@media screen and (max-width: 576px) {
+    .header{
+        
+    }
+    .header-title{
+        margin-top: -12px;
+    }
+    nav a{
+        display: none;
+    }
+    .nav-bar{
+        margin-top: 40px;
+        display: contents;
+    }
+
+    /* header content */
+    .header-content{
+        flex-direction: column-reverse;
+    }
+}
+
+/* sites section styles */
+.sites{
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    width: 1110px;
+    height: 60px;
+    left: 165px;
+    top: 700px;
+    border-top: 1px solid rgb(228, 223, 223);
+    border-bottom: 1px solid rgb(228, 223, 223);
+    
+}
+.sites img{
+    padding-top: 15px;
+}
+
+@media screen and (max-width: 576px) {
+    /* .sites{
+        display: grid;
+        grid-template-columns: 1fr, 1fr, 1fr;
+    } */
+}
+
+/* Collectin section styles */
+.collections-container{
+    margin-top: 300px;
+
+
+}
+.collections{
+    width: 90%;
+    display: grid;
+    margin: 0 auto;
+    
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 20px;
+}
+.collection{
+    width: 329px;
+    height: 476px;
+    padding: 10px;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+}
+.collection img{
+    height: 250px;
+    width: 319px;
+    padding: 5px;
+    border-radius: 5px;
+}
+.collection-title{
+    color: #3A3A3A;
+    font: 'Poppins';
+    font-weight: 600;
+    size: 28px;
+    text-align: center;
+    line-height: 70px;
+    /* margin-bottom: 25px; */
+}
+.collection p{
+    line-height: 12px;
+    font-size: 14px;
+    font-weight: 700;
+    color: #787885;
+}
+
+.ratings{
+    display: flex;
+    gap: 10px;
+}
+.ratings .star{
+    color: #FB8200;
+}
+
+/* Collection container responsive styles */
+@media screen and (max-width: 576px) {
+    .collections{
+        grid-template-columns: repeat(1, 1fr);
+        margin: 0 auto;
+    }
+}
+
+/* featured section */
+.feature{
+    display: flex;
+    /* justify-content: space-between; */
+    gap: 50px;
+    margin: 50px;
+}
+.feature img{
+    width: 400px;
+}
+.feature-titles{
+    width: 600px;
+}
+.feature-titles h2{
+    font-family: Poppins;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 60px;
+    letter-spacing: 0px;
+    text-align: left;
+
+}
+.feature-titles p{
+    width: 400px;
+}
+
+@media screen and (max-width: 576px) {
+    .feature{
+        flex-direction: column;
+        margin: 0 auto;
+    }
+    .feature-titles h2{
+        font-size: 20px;
+    }
+    .feature img{
+        width: 338px;
+    }
+    .feature-titles p{
+        width: 300px;
+    }
+}
+
+/* footer section styles */
+.footer{
+    color: white;
+    background: #000;
+    text-align: center;
+    padding: 35px;
+    width: 110%;
+    margin: -50px;
+    margin-top: 50px;
+    margin-right: 0;
 }
